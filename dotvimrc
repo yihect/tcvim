@@ -28,4 +28,9 @@ autocmd BufWinLeave * call clearmatches()
 if $PROJ_DIR != ""
 	autocmd vimenter * NERDTree $PROJ_DIR
 	map <F5> :NERDTreeToggle<CR>
+	autocmd VimEnter * wincmd l
 endif
+
+"======================================================================
+"== NERDTree: a file system explorer for vim
+nmap <F8> :TagbarToggle<CR>
