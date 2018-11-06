@@ -1,0 +1,24 @@
+"======================================================================
+"== pathogen: a vim plugin manager
+execute pathogen#infect()
+
+syntax on
+filetype plugin indent on
+
+"======================================================================
+"== for better support kernel dev
+"
+" 80 characters line
+" Uncomment second line if want to make 80+ columns highlighted as well.
+set colorcolumn=81
+"execute "set colorcolumn=" . join(range(81,335), ',')
+highlight ColorColumn ctermbg=Black ctermfg=DarkRed
+" 
+" Highlight trailing spaces
+" http://vim.wikia.com/wiki/Highlight_unwanted_spaces
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
