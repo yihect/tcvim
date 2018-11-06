@@ -13,7 +13,7 @@ filetype plugin indent on
 set colorcolumn=81
 "execute "set colorcolumn=" . join(range(81,335), ',')
 highlight ColorColumn ctermbg=Black ctermfg=DarkRed
-" 
+"
 " Highlight trailing spaces
 " http://vim.wikia.com/wiki/Highlight_unwanted_spaces
 highlight ExtraWhitespace ctermbg=red guibg=red
@@ -22,3 +22,10 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
+
+"======================================================================
+"== NERDTree: a file system explorer for vim
+if $PROJ_DIR != ""
+	autocmd vimenter * NERDTree $PROJ_DIR
+	map <F5> :NERDTreeToggle<CR>
+endif

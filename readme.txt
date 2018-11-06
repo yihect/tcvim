@@ -8,6 +8,7 @@
 4, vim plugins
 4.1, installing cscope maps for vim
 4.2, installing vim linux coding style for vim
+4.3, installing NERDTree for vim
 
 =========================================
 == CONTENT
@@ -40,3 +41,10 @@
 4.2, installing vim linux coding style for vim
 	$ git clone https://github.com/vivien/vim-linux-coding-style.git  \
 			~/.vim/bundle/vim-linux-coding-style
+
+4.3, installing NERDTree for vim
+	$ git clone https://github.com/scrooloose/nerdtree.git  \
+			~/.vim/bundle/nerdtree
+
+
+
