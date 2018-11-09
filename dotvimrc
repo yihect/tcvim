@@ -1,4 +1,12 @@
 "======================================================================
+"== myself settings
+set cursorline
+set nu
+set hlsearch
+syntax on
+set nowrap
+
+"======================================================================
 "== pathogen: a vim plugin manager
 execute pathogen#infect()
 
