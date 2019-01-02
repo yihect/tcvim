@@ -5,13 +5,13 @@ set nu
 set hlsearch
 syntax on
 set nowrap
+set nocompatible
+filetype plugin on
+filetype plugin indent on
 
 "======================================================================
 "== pathogen: a vim plugin manager
 execute pathogen#infect()
-
-syntax on
-filetype plugin indent on
 
 "======================================================================
 "== for better support kernel dev
@@ -42,3 +42,22 @@ endif
 "======================================================================
 "== NERDTree: a file system explorer for vim
 nmap <F8> :TagbarToggle<CR>
+
+"======================================================================
+"== vimwiki: a personal wiki for vim
+let kernel_wiki = {}
+let kernel_wiki.path = '~/stuff/linux/kernel/kernel_docs/'
+let kernel_wiki.path_html = '~/stuff/linux/kernel/kernel_docs/html/'
+let kernel_wiki.auto_tags = 1
+let kernel_wiki.ext = '.knt'
+" let kernel_wiki.template_path = '~/stuff/linux/kernel/kernel_docs/template'
+" let kernel_wiki.template_default = 'default.tpl'
+let kernel_wiki.nested_syntaxes = {'python': 'python', 'c++': 'cpp'}
+let g:vimwiki_list = [kernel_wiki]
+let g:vimwiki_dir_link = 'index'
+nmap <Leader>wh <Plug>VimwikiVSplitLink
+nmap <Leader>wv <Plug>VimwikiVSplitLink
+nmap <Leader>wtn <Plug>VimwikiTabnewLink
+nmap <leader>tt <Plug>VimwikiToggleListItem
+
+

@@ -9,6 +9,7 @@
 4.1, installing cscope maps for vim
 4.2, installing vim linux coding style for vim
 4.3, installing NERDTree for vim
+4.3, installing vimwiki for vim
 
 =========================================
 == CONTENT
@@ -46,5 +47,8 @@
 	$ git clone https://github.com/scrooloose/nerdtree.git  \
 			~/.vim/bundle/nerdtree
 
-
+4.3, installing vimwiki for vim
+	$ git clone https://github.com/vimwiki/vimwiki.git \
+			~/.vim/bundle/vimwiki
+	TIP: remember to put wiki content into the directory marked at dotvimrc
 
