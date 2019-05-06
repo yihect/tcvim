@@ -52,3 +52,7 @@
 			~/.vim/bundle/vimwiki
 	TIP: remember to put wiki content into the directory marked at dotvimrc
 
+4.4, installing hexmod plugin for vim
+	$ git clone https://github.com/fidian/hexmode.git \
+			~/.vim/bundle/hexmode
+

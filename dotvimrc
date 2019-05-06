@@ -69,4 +69,10 @@ nmap <Leader>wv <Plug>VimwikiVSplitLink
 nmap <Leader>wtn <Plug>VimwikiTabnewLink
 nmap <leader>tt <Plug>VimwikiToggleListItem
 
+"======================================================================
+"== hexmode: hex mode plugin for vim
+" open these files automatically in hex mode
+let g:hexmode_patterns = '*.bin,*.exe,*.dat,*.o,*.tpl'
+" options passed to xxd
+let g:hexmode_xxd_options = '-g 2'
 
