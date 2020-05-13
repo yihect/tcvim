@@ -9,9 +9,10 @@
 4.1, installing cscope maps for vim
 4.2, installing vim linux coding style for vim
 4.3, installing NERDTree for vim
-4.4, installing vimwiki for vim
-4.5, installing hexmod plugin for vim
-4.6, installing drawit plugin for vim
+4.4, installing tagbar for vim
+4.5, installing vimwiki for vim
+4.6, installing hexmod plugin for vim
+4.7, installing drawit plugin for vim
 
 =========================================
 == CONTENT
@@ -49,15 +50,19 @@
 	$ git clone https://github.com/scrooloose/nerdtree.git  \
 			~/.vim/bundle/nerdtree
 
-4.4, installing vimwiki for vim
+4.4, installing tagbar for vim
+	$ git clone https://github.com/majutsushi/tagbar.git \
+			~/.vim/bundle/tagbar
+
+4.5, installing vimwiki for vim
 	$ git clone https://github.com/vimwiki/vimwiki.git \
 			~/.vim/bundle/vimwiki
 	TIP: remember to put wiki content into the directory marked at dotvimrc
 
-4.5, installing hexmod plugin for vim
+4.6, installing hexmod plugin for vim
 	$ git clone https://github.com/fidian/hexmode.git \
 			~/.vim/bundle/hexmode
 
-4.6, installing drawit plugin for vim
+4.7, installing drawit plugin for vim
 	$ git clone https://github.com/vim-scripts/DrawIt.git \
 			~/.vim/bundle/drawit
