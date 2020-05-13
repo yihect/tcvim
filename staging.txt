@@ -1,0 +1,39 @@
+to think about:
+https://github.com/jisaacks/GitGutter
+
+
+think about ltd file???
+------------->
+diff --git a/dotvimrc b/dotvimrc
+index f64773948711..cf940874948e 100644
+--- a/dotvimrc
++++ b/dotvimrc
+@@ -6,6 +6,7 @@ set hlsearch
+ syntax on
+ set nowrap
+ set nocompatible
++filetype on
+ filetype plugin on
+ filetype plugin indent on
+ 
+@@ -70,3 +71,19 @@ nmap <Leader>wtn <Plug>VimwikiTabnewLink
+ nmap <leader>tt <Plug>VimwikiToggleListItem
+ 
+ 
++"======================================================================
++"== leitner: autocmd for checking KEYWORD% modification
++function! CheckKeywordsStrModification()
++  normal mZ
++  let l:chars = col("$")
++  %s/\s\+$//e
++  if (line("'Z") != line(".")) || (l:chars != col("$"))
++    echo "Trailing whitespace stripped\n"
++  endif
++  normal `Z
++endfunction
++
++autocmd BufWritePre *.ltd call CheckKeywordsStrModification()
++
++
++
+<-------------
