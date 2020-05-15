@@ -55,11 +55,11 @@ nmap <F8> :TagbarToggle<CR>
 "======================================================================
 "== vimwiki: a personal wiki for vim
 let kernel_wiki = {}
-let kernel_wiki.path = '~/stuff/linux/kernel/kernel_docs/'
-let kernel_wiki.path_html = '~/stuff/linux/kernel/kernel_docs/html/'
+let kernel_wiki.path = '~/stuff/tcdocs/'
+let kernel_wiki.path_html = '~/stuff/tcdocs/html/'
 let kernel_wiki.auto_tags = 1
 let kernel_wiki.ext = '.knt'
-" let kernel_wiki.template_path = '~/stuff/linux/kernel/kernel_docs/template'
+" let kernel_wiki.template_path = '~/stuff/tcdocs/template'
 " let kernel_wiki.template_default = 'default.tpl'
 let kernel_wiki.nested_syntaxes = {'python': 'python', 'c++': 'cpp'}
 let g:vimwiki_list = [kernel_wiki]
