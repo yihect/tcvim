@@ -6,6 +6,7 @@ set hlsearch
 syntax on
 set nowrap
 set nocompatible
+set nocscopeverbose
 filetype plugin on
 filetype plugin indent on
 
